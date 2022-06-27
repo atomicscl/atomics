@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * {
-    color: black;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     text-decoration: none;
     margin: 0;
     padding: 0;
-    
 }
 
 html,
@@ -28,31 +25,103 @@ body {
     height: 100%;
     background: white;
     z-index: 100;
-
 }
 
-#menu {
-    background-color: white;
+#premenu {
+    background-color: black;
+}
+
+#menu{
+    background-color: rgb(23, 21, 21);
     position: fixed;
     width: 100vw;
     justify-content: space-between;
     text-align: center;
-    padding-top: 1.2vh;
-    padding-bottom: 1.2vh;
-    font-size: 1.5em;
-    z-index: 3;
-    opacity: 0.9;
+    padding: 1.2vh;
+    font-size: 1.3em;
+    z-index: 2;
+    opacity: 0.8;
+ 
 }
 
-#menu a {
-    color: black;
+#menu a{
+    color: white;
     transition: 0.15s;
     text-decoration: none;
 }
 
 #menu a:hover {
-    font-size: 1.3em;
     color: #6d6f7a;
-    opacity: 0.7;
+    opacity: 0.4;
     transition: 0.15s;
+}
+
+#menu i{
+    display: flex;
+    position: fixed;
+    color: white;
+    margin-left: 5vh;
+    padding-top: 0.4vh;
+}
+
+#servicios{
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+
+.image {
+    height: 100%;
+    width: 100%;  
+    opacity: 0.1; 
+}
+
+#servicios label{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px 1px rgb(131, 127, 127);
+}
+
+#servicios h1{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    font-size: 3vh;
+    width: 60%;
+}
+
+#servicios .privacidad {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px 1px rgb(131, 127, 127);
+}
+
+#servicios h2{
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    font-size: 3vh;
+    width: 55%;
+}
+
+#servicios .compromiso {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    font-size: 4rem;
+}
+
+#servicios h3 {
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    font-size: 3vh;
+    width: 60%;
 }
