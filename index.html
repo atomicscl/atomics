@@ -1,61 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='atom.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
-    <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="atom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="boutUs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/7e22763459.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Atomics</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="loader">
-        <main class="animate__animated animate__backInDown">
-            <div class="atom">
-                <div class="electron"></div>
-                <div class="electron-alpha"></div>
-                <div class="electron-omega"></div>
-            </div>
-        </main>
+      <main class="animate__animated animate__backInDown">
+        <div class="atom">
+          <div class="electron"></div>
+          <div class="electron-alpha"></div>
+          <div class="electron-omega"></div>
+        </div>
+      </main>
     </div>
 
-        <div id="menu">
-            <i class="fa-solid fa-atom">Atomics</i>
-            <label><a href="#me">SERVICIOS</a></label>
-            <label>｜</label>
-            <label><a href="#projects">NOSOTROS</a></label>
-            <label>｜</label>
-            <label><a href="#talk">CONTÁCTANOS</a></label>
-        </div>
-
+    <div id="menu">
+      <i class="fa-solid fa-atom">Atomics</i>
+      <label><a href="#servicios">SERVICIOS</a></label>
+      <label>｜</label>
+      <label><a href="#projects">NOSOTROS</a></label>
+      <label>｜</label>
+      <label><a href="#talk">CONTÁCTANOS</a></label>
+    </div>
 
     <div id="servicios">
-        <img class="image" src="public/develp.jpg">
+      <img class="image" src="public/develp.jpg" />
 
+      <div class="tec">
+        <label>TECNOLOGÍA DE PUNTA</label>
+        <h1>
+          Todos los días estudiamos nuevas tecnologías y metodologías
+          informáticas que aportan al desarrollo, eficiencia y seguridad.
+        </h1>
+      </div>
 
-        <div class="tec"><label>TECNOLOGÍA DE PUNTA</label>
-        <h1>Todos los días estudiamos nuevas tecnologías y metodologías informáticas que aportan al desarrollo, eficiencia y
-            seguridad.</h1></div>
- 
-        <label class="privacidad">PRIVACIDAD</label>
-        <h2>Estamos comprometidos con la seguridad y la privacidad de la información de nuestros clientes.</h2>
-    
-        <label class="compromiso">COMPROMISO</label>
-        <h3>El cliente siempre tiene la razón, es por esto que escuchamos las sugerencias de nuestros clientes al momento de trabajar, la retroalimentación es indispensable para realizar una entrega final.</h3>
-    
+      <label class="privacidad">PRIVACIDAD</label>
+      <h2>
+        Estamos comprometidos con la seguridad y la privacidad de la información
+        de nuestros clientes.
+      </h2>
+
+      <label class="compromiso">COMPROMISO</label>
+      <h3>
+        El cliente siempre tiene la razón, es por esto que escuchamos las
+        sugerencias de nuestros clientes al momento de trabajar, la
+        retroalimentación es indispensable para realizar una entrega final.
+      </h3>
     </div>
+    <div id="projects">
+      <h2>Team</h2>
+      <h3>Executive & Develpment</h3>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="img1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO &amp; Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="img2.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="img3.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="talk">
+        <h2>falso.</h2>
+    </div>
+    <a href="https://wa.me/56946241025" class="whatsapp" target="_blank">
+      <i class="fa fa-whatsapp whatsapp-icon"></i
+    ></a>
 
-
-
-
-
-    <a href="https://wa.me/56946241025" class="whatsapp"
-        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-
-
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
