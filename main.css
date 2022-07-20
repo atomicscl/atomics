@@ -4,9 +4,28 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     text-decoration: none;
-    margin: 0;
+
     padding: 0;
 }
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+    position: absolute;
+}
+
+#particles-js {
+    margin: 5vh;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+ 
+}
+
 
 html,
 body {
@@ -72,7 +91,6 @@ body {
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
-    background-color: #07080a;
     text-shadow: 1px 1px 1px rgb(33, 17, 33);
 }
 
