@@ -49,7 +49,7 @@ body {
     z-index: 100;
 }
 #logo{
-    position: fixed;
+    position: absolute;
     left: 100px;
     font-size: 24px;
     z-index: 3;
@@ -75,31 +75,29 @@ body {
     color: #ffffff;
     transition: 0.15s;
 }
-
-#menu i{
-    display: flex;
-    color: white;
-    margin-left: 5vh;
-    padding-top: 0.4vh;
-}
 .pipe{
     color: #a7a7a7;
     transition: 0.15s; 
 }
-@media screen and (max-width: 940px) {
+@media (max-width: 940px) {
     #logo{
-        display: none;
+        left: -20px;
+        position: inherit;
+        display: inline-flex;
     }
-
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 621px) {
     .pipe{
         display: none;
     }
-    #menu a{
-        padding: 10px;
+    #menu{
+        flex-direction: column;
+    }    
+    #logo{
+        left: 0;
+        margin-bottom: 10px;
     }
-}   
+}
 #servicios{
     margin: 0 auto;
     width: 100vw;
