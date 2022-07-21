@@ -32,22 +32,25 @@ body {
     overflow-x: hidden;
 }
 
+.row{
+    width: 100%;
+    justify-content: space-between;
+}
+
+
 #projects{
-    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 #projects label{
     font-size: 3vw;
     font-weight: bold;
-        text-shadow: 1px 1px white;
+    text-shadow: 1px 1px white;
     padding-bottom: 5vh;
 }
-
 
 #loader{  
     position: fixed;
@@ -114,85 +117,7 @@ body {
 
 
 
-#talk {
-    
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.form {
-    width: 70vw;
-    height: 70vh;
-    background: #e6e6e6;
-    border-radius: 8px;
-    box-shadow: 0 0 40px -10px #000;
-    padding: 20px 20px;
-    max-width: calc(90vw - 40px);
-    box-sizing: border-box;
-    position: relative;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    height: 25vh;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    color: black;
-    resize: none;
-    border: 0;
-    transition: all .3s;
-    border-bottom: 2px solid #bebed2;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    color: black;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
-    transition: all .3s;
-    border-bottom: 2px solid #bebed2
-}
-
-input:focus {
-    border-bottom: 2px solid #78788c
-}
-
-p:before {
-    content: attr(type);
-    display: block;
-    margin: 28px 0 0;
-    font-size: 14px;
-    color: black;
-}
-
-button {
-    float: right;
-    margin: 25px 0 0;
-    border: 2px solid #78788c;
-    background: 0;
-    color: black;
-    cursor: pointer;
-    transition: all .3s
-}
-
-button:hover {
-    color: rgb(179, 174, 174);
-
-}
-
-span {
-    margin: 0 5px 0 15px
-}
 
 
 
@@ -224,7 +149,7 @@ span {
 
 #der label{
     display: block;
-    font-size: 3vw;
+    font-size: 8vh;
     color: rgb(255, 255, 255);
  
    
