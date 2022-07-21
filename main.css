@@ -10,6 +10,8 @@
 
 
 
+
+
 #particles-js {
     width: 100%;
     height: 100%;
@@ -29,6 +31,7 @@ body {
     background-color: #07080a;
     overflow-x: hidden;
 }
+
 #projects{
     width: 100%;
     height: 100%;
@@ -98,12 +101,7 @@ body {
         margin-bottom: 10px;
     }
 }
-#servicios{
-    margin: 0 auto;
-    width: 100vw;
-    height: 100vh;
-    text-shadow: 1px 1px 1px rgb(33, 17, 33);
-}
+
 
 
 #talk {
@@ -179,10 +177,36 @@ button {
 }
 
 button:hover {
-    color: black;
-    font-size: 1.2em;
+    color: rgb(179, 174, 174);
+
 }
 
 span {
     margin: 0 5px 0 15px
+}
+
+
+
+#servicios {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin-top: -7vh;
+}
+
+
+#izq{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#der{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

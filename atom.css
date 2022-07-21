@@ -17,15 +17,15 @@
 }
 
 :root {
-    --atom-size: 120px;
-    --atom-color-hex: #81529d;
+    --atom-size: 30vh;
+    --atom-color-hex: #8e00e0;
     --atom-color-rgb: 104, 81, 186;
-    --nucleus-size: calc(var(--atom-size) / 8);
-    --electron-color-hex: #6452b4;
-    --electron-orbit-size: calc(var(--atom-size) / 2.5);
-    --electron-size: calc(var(--atom-size) / 25);
-    --electron-speed: 5s;
-    --electron-speed-alpha: 5s;
+    --nucleus-size: calc(var(--atom-size) / 7);
+    --electron-color-hex: #482dc4;
+    --electron-orbit-size: calc(var(--atom-size) / 3.5);
+    --electron-size: calc(var(--atom-size) / 35);
+    --electron-speed: 4s;
+    --electron-speed-alpha: 3s;
     --electron-speed-omega: 5s;
 }
 
@@ -41,7 +41,7 @@
     position: relative;
     width: var(--atom-size);
     height: var(--atom-size);
-    animation: 3s atom infinite cubic-bezier(0.25, .25, 0.35, .35);
+    animation: 8s atom infinite cubic-bezier(0.25, .25, 0.35, .35);
 }
 
 @keyframes atom {
