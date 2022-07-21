@@ -40,6 +40,15 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+#projects label{
+    font-size: 3vw;
+    font-weight: bold;
+        text-shadow: 1px 1px white;
+    padding-bottom: 5vh;
+}
+
+
 #loader{  
     position: fixed;
     display: flex;
@@ -71,11 +80,12 @@ body {
 }
 #menu a{
     align-items: center;
-    color: #d3d3d3;
+    color: #ffffff;
     transition: 0.15s;
+    font-weight: bold;
 }
 #menu a:hover{
-    color: #ffffff;
+    color: #716fa3;
     transition: 0.15s;
 }
 .pipe{
@@ -205,6 +215,7 @@ span {
 
 #der{
     width: 50%;
+    margin: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;

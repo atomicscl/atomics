@@ -1,11 +1,13 @@
 /* Three columns side by side */
 .column {
   float: left;
-  width: 33.3%;
-  margin-bottom: 5vh;
-  padding: 2vh;
+  width: 20%;
+  margin-bottom: 7vh;
+  padding: 3vh;
   
 }
+
+
 
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -37,17 +39,6 @@
   color: grey;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
 
 .button:hover {
   background-color: #555;
