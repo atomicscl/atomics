@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <title>Atomics</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,31 +9,27 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/atom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/boutUs.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/7e22763459.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Atomics</title>
+    <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
   </head>
-  <div id="loader">
-    <main class="animate__animated animate__backInDown">
-      <div class="atom">
-        <div class="electron"></div>
-        <div class="electron-alpha"></div>
-        <div class="electron-omega"></div>
-      </div>
-    </main>
-  </div>
-
-  <div id="particles-js"></div>
-
-  
   <body>
+    <!-- Loader del sitio. -->
+    <div id="loader">
+      <main class="animate__animated animate__backInDown">
+        <div class="atom">
+          <div class="electron"></div>
+          <div class="electron-alpha"></div>
+          <div class="electron-omega"></div>
+        </div>
+      </main>
+    </div>
+    
+    <!-- Fondo de la página, partículas: configuración en "particles.json" -->
+    <!-- Se estiliza fixed para mantener el fondo en todo el sitio. -->
+    <div id="particles-js"></div>
+
+    <!-- Menú del sitio. -->
     <div id="menu">
       <div id = "logo">
         <i class="fa-solid fa-atom">Atomics</i></div>
@@ -47,12 +44,10 @@
       <div>
         <label><a href="#talk">Contáctanos</a></label>
       </div>
-      
-      
     </div>
 
-    <div id="servicios">
-      
+  <!-- Página principal. Se divide en dos secciones (izquierda y derecha, respectivamente). -->
+    <div id="homepage">
       <div id="izq">
         <main>
           <div class="atom">
@@ -62,30 +57,19 @@
           </div>
         </main>
       </div>
-
-
-      
       <div id="der">
-
         <div style="display: block;">
         <label style="font-weight: bold;   text-shadow: 1px 1px white;">¿Tienes una idea?</label>
         <label style="font-size: 4vh;">¡Nosotros lo programamos!</label>
         <label style="font-size: 2.2vh;">Servicios de Desarrollo de Software y Soluciones a Medidas de Alta Calidad.</label>
-
         </div>
-
       </div>
-
-
-    
-
-
-
     </div>
 
-    <div id="projects">
+
+  <!-- Esta sección muestra el equipo de desarrollo de la página. -->
+    <div id="equipo">
       <label>Equipo de Desarrollo y Gestión</label>
-      
       <div class="row">
         <div class="column">
           <div class="card">
@@ -95,11 +79,10 @@
               <p class="title">CEO &amp; Founder</p>
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la Universidad de Santiago de Chile.</p>
               <p>bastian.escribano@usach.cl</p>
-        
             </div>
           </div>
         </div>
-      
+
         <div class="column">
           <div class="card">
             <img src="img2.jpg" alt="Nícolas" style="width:100%">
@@ -109,7 +92,6 @@
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
               Universidad de Santiago de Chile.</p>
               <p>nicolas.farfan@usach.cl</p>
-      
             </div>
           </div>
         </div>
@@ -123,13 +105,10 @@
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
               Universidad de Santiago de Chile.</p>
               <p>jovanni.schneider@usach.cl</p>
-         
             </div>
           </div>
         </div>
   
-      
-
         <div class="column">
           <div class="card">
             <img src="img4.jpg" alt="Diego" style="width:100%">
@@ -154,39 +133,25 @@
               <p>jose.toro@usach.cl</p>
           </div>
         </div>
-      
-      
-      
-      
-      
-      
-      
-      
-
     </div>
 
-
-    
+  <!-- Esta sección muestra el formulario de contacto de la página. -->
     <div id="talk">
-  <form class="form" target="_blank" action="https://formsubmit.co/bastian.escribano@usach.cl" method="POST">
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_captcha" value="false">
-    <h2 style="color: black;">¡Contáctanos!</h2>
-    <input type="hidden" name="_subject" value="Atomics">
-    <p type="Nombre"><input name="Nombre" placeholder="Escríbenos tu nombre aquí"></input></p>
-    <p type="Email"><input type="email" name="Correo" placeholder="Déjanos tu contacto de correo"></input></p>
-    <p type="Mensaje"><textarea name="Mensaje" placeholder="¿Qué podemos hacer por ti?"></textarea></p>
-    <button type="submit">Enviar</button>
-  </form>
-
-
-
-      
+      <form class="form" target="_blank" action="https://formsubmit.co/bastian.escribano@usach.cl" method="POST">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <h2 style="color: black;">¡Contáctanos!</h2>
+        <input type="hidden" name="_subject" value="Atomics">
+        <p type="Nombre"><input name="Nombre" placeholder="Escríbenos tu nombre aquí"></input></p>
+        <p type="Email"><input type="email" name="Correo" placeholder="Déjanos tu contacto de correo"></input></p>
+        <p type="Mensaje"><textarea name="Mensaje" placeholder="¿Qué podemos hacer por ti?"></textarea></p>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
+
+  <!-- Ícono de WhatsApp del sitio. -->
     <a href="https://wa.me/56946241025" class="whatsapp" target="_blank">
-      <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-
-
+    <i class="fa fa-whatsapp whatsapp-icon"></i></a>
   <script src="scripts/particles.js"></script>
   <script src="scripts/index.js"></script>
   </body>
