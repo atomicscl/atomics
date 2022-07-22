@@ -20,7 +20,6 @@
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;;
- 
 }
 
 
@@ -151,6 +150,19 @@ body {
     display: block;
     font-size: 8vh;
     color: rgb(255, 255, 255);
- 
-   
+}
+
+
+#servicios{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#ejemplos{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 }
