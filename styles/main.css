@@ -8,8 +8,31 @@
     padding: 0;
 }
 
+.line{
+    background-color: white;
+    position: absolute;
+    width: 1px;
+    left: 50%;
+    height: 330%;
+}
+.ejemplo {
+    background-color: #07080A;
+    opacity: 1;
+    z-index: 3;
+    width: 90vw;
+    margin: 5vw;
+    height: 70vh;
+}
 
-
+#ejemplos {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
 
 
 #particles-js {
@@ -160,9 +183,3 @@ body {
     display: flex;
 }
 
-#ejemplos{
-    margin: 0 auto;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-}
