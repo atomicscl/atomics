@@ -1,0 +1,35 @@
+.subtitle {
+    font-size: 2.2vh;
+}
+
+.line {
+    background-color: white;
+    position: absolute;
+    width: 1px;
+    left: 50%;
+    height: 400%;
+}
+
+.ejemplo {
+    background-color: #07080A;
+    opacity: 1;
+    z-index: 3;
+    width: 90vw;
+    margin: 5vw;
+    height: 70vh;
+}
+
+#ejemplos {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+  #map {
+      height: 90%;
+ 
+  }

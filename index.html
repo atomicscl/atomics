@@ -9,8 +9,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/atom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/boutUs.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/examples.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+              integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+              crossorigin="" />
+
     <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -74,6 +79,8 @@
       <div class="ejemplo">
         <h2>Ubicación en el Mapa</h2>
         <label class="subtitle">Incluir la ubicación en tu sitio web es importantísimo para tus nuevos clientes.</label>
+        <div id="map"></div>
+      
       </div>
       <div class="ejemplo">
         <h2>Gráficos y Análisis de Datos</h2>
@@ -182,6 +189,11 @@
   <!-- Ícono de WhatsApp del sitio. -->
     <a href="https://wa.me/56946241025" class="whatsapp" target="_blank">
     <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+          integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+          crossorigin=""></script>
+
   <script src="scripts/particles.js"></script>
   <script src="scripts/index.js"></script>
   </body>
