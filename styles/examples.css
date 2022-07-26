@@ -130,6 +130,7 @@ background: url("/public/4.jpg");
     height: 60%;
     width: 40%;
     border-radius: 1vh;
+    -webkit-backdrop-filter: blur(2.4px);
 }
 
 
