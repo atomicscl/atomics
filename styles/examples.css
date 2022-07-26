@@ -2,21 +2,74 @@
     font-size: 2.2vh;
 }
 
-.line {
-    background-color: white;
-    position: absolute;
-    width: 1px;
-    left: 50%;
-    height: 400%;
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
+/* Add some margins for each label */
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+#textBlock{
+    display: block;
+    width: 40%;
+}
+
+
 .ejemplo {
-    background-color: #07080A;
-    opacity: 1;
+    border-radius: 16px;
+    box-shadow: 3px 4px 30px rgba(86, 33, 76, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
     z-index: 3;
     width: 90vw;
-    margin: 5vw;
-    height: 70vh;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.ejemplo form{
+    width: 40%;
 }
 
 #ejemplos {
@@ -29,7 +82,29 @@
     width: 100vw;
 }
 
-  #map {
-      height: 90%;
- 
+#map {
+    height: 60%;
+    width: 60%;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 1vh;
+    box-shadow: 0 4px 30px rgba(86, 33, 76, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+}
+
+#graphic{
+    height: 70%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 1vh;
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+}
+
+
+  #chart-wrapper {
+      display: inline-block;
+      position: relative;
+      width: 80%;
   }
+
