@@ -1,12 +1,12 @@
 
 .slider {
     margin: 0 auto;
-    max-width: 940px;
+    width: 100%;
  
 }
 
 .slide_viewer {
-    height: 340px;
+    height: 40vh;
     overflow: hidden;
     position: relative;
 }
@@ -30,102 +30,27 @@
 }
 
 .slide:nth-of-type(2) {
-    background: url("https://source.unsplash.com/p0j-mE6mGo4/700x700");
+    background: url("/public/2.jpg");
+    
 }
 
 .slide:nth-of-type(1) {
-background: url("https://source.unsplash.com/wvOhowrohUI/600x600");
+background: url("/public/1.jpg");
+
 }
 
+
 .slide:nth-of-type(3) {
-background: url("https://source.unsplash.com/pjAH2Ax4uWk/700x700");
+background: url("/public/3.jpg");
+
 }
 
 .slide:nth-of-type(4) {
-background: url("https://source.unsplash.com/f5pTwLHCsAg/800x800");
-}
-
-.slide_buttons {
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-}
-
-a.slide_btn {
-    color: #474544;
-    font-size: 42px;
-    margin: 0 0.175em;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.slide_btn.active,
-.slide_btn:hover {
-    color: #428CC6;
-    cursor: pointer;
-}
-
-.directional_nav {
-    height: 340px;
-    margin: 0 auto;
-    max-width: 940px;
-    position: relative;
-    top: -340px;
-}
-
-.previous_btn {
-    bottom: 0;
-    left: 100px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-}
-
-.next_btn {
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    right: 100px;
-    top: 0;
-}
-
-.previous_btn,
-.next_btn {
-    cursor: pointer;
-    height: 65px;
-    opacity: 0.5;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -ms-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
-    transition: opacity 0.4s ease-in-out;
-    width: 65px;
-}
-
-.previous_btn:hover,
-.next_btn:hover {
-    opacity: 1;
-}
-
-@media only screen and (max-width: 767px) {
-    .previous_btn {
-        left: 50px;
-    }
-
-    .next_btn {
-        right: 50px;
-    }
+background: url("/public/4.jpg");
 }
 
 
 
-.subtitle {
-    font-size: 2.2vh;
-}
 
 .form-inline {
     display: flex;
@@ -179,10 +104,8 @@ a.slide_btn {
 
 .ejemplo {
     border-radius: 16px;
-    box-shadow: 3px 4px 30px rgba(86, 33, 76, 0.1);
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
-    z-index: 3;
+    box-shadow: 3px 4px 30px rgba(89, 0, 255, 0.1);
+    -webkit-backdrop-filter: blur(2.4px);
     width: 90vw;
     height: 60vh;
     margin: 0 auto;
@@ -190,7 +113,6 @@ a.slide_btn {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
 
 
@@ -207,29 +129,20 @@ a.slide_btn {
 #map {
     height: 60%;
     width: 40%;
-    background: rgba(255, 255, 255, 0);
     border-radius: 1vh;
-    box-shadow: 0 4px 30px rgba(86, 33, 76, 0.1);
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
 }
+
 
 #graphic{
     height: 70%;
     width: 50%;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 1vh;
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
+    border-radius: 2vh;
 }
 
 #galeria{
     height: 70%;
     width: 40%;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 2vh;
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
+
 }
 
   #chart-wrapper {

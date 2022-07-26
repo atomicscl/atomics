@@ -150,7 +150,6 @@ body {
 
 #der{
     width: 50%;
-    margin: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,10 +158,19 @@ body {
 
 #der label{
     display: block;
-    font-size: 8vh;
     color: rgb(255, 255, 255);
 }
 
+.question{
+    font-size: 8vh;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+}
 
-
+.title {
+    font-size: 4vh;
+}
+.subtitle {
+    font-size: 2.2vh;
+}
 
