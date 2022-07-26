@@ -120,13 +120,6 @@ a.slide_btn {
         right: 50px;
     }
 }
-.line{
-    height: 270vh;
-    position: absolute;
-    left: 50%;
-    width: 1px;
-    background-color: white;
-}
 
 
 
@@ -197,12 +190,9 @@ a.slide_btn {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    
+
 }
 
-.ejemplo form{
-    width: 40%;
-}
 
 #ejemplos {
     margin: 0 auto;
@@ -211,6 +201,7 @@ a.slide_btn {
     align-items: center;
     text-align: center;
     width: 100vw;
+    margin-bottom: -40vh;
 }
 
 #map {
