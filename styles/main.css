@@ -121,7 +121,24 @@ body {
     padding-top: -7vh;
 }
 
-
+@media (max-width: 621px) { 
+    #homepage {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #izq{
+        margin-bottom: 120px;
+    }
+    #dere{
+        font-size: small;
+        display: flex;
+        flex-direction:column;
+        margin: -100px;
+        align-items: start;
+        text-align: start;
+    }
+}
 #izq{
     width: 50%;
     display: flex;
