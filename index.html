@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/boutUs.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/examples.css" />
-    <link red="stylesheet" type="text/css" media="screen" href="styles/slider.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/services.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -40,7 +40,7 @@
       <div id = "logo">
         <i class="fa-solid fa-atom">Atomics</i></div>
       <div>
-        <label><a href="#servicios">Servicios</a></label>
+        <label><a href="#ejemplos">Servicios</a></label>
         <label class = "pipe">｜</label>
       </div>
       <div>
@@ -79,11 +79,11 @@
     <!-- Esta sección muestran ejemplos qué podemos implementar. 
         Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
     <div id="ejemplos">
-    
+      <div class="line"></div>
       <div class="ejemplo">
         <div id="textBlock">
           <h2>Ubicación en el Mapa</h2>
-          <label class="subtitle">Incluir la ubicación en tu sitio web es importantísimo para tus nuevos clientes.</label>
+          <label class="subtitle">Incluye la ubicación de tu negocio, tus nuevos clientes te lo agradecerán.</label>
         </div>
       <div id="map"></div>
       </div>
@@ -95,7 +95,7 @@
         </div>
       <div id="textBlock">
         <h2>Gráficos y Análisis de Datos</h2>
-        <label class="subtitle">A través de la computación y matemática analizamos los datos junto a ti.</label>
+        <label class="subtitle">A través de la computación y matemática analizamos los datos de tu negocio junto a ti.</label>
       </div>
       </div>
       <div class="ejemplo">
@@ -107,28 +107,32 @@
         <label for="email">Correo:</label>
         <input type="email" id="email" placeholder="Ingresa tu correo" name="email">
         <label for="pwd">Mensaje:</label>
-        <input type="password" id="pwd" placeholder="Ingresa un mensaje" name="pswd">
-        <button type="submit">Enviar</button>
+        <input id="pwd" placeholder="Ingresa un mensaje" name="pswd">
+        <button>Enviar</button>
       </form>
     </div>
-
-
-
-
-
     <div class="ejemplo">
+       <div id="galeria">
+        <div class="slider">
+          <div class="slide_viewer">
+            <div class="slide_group">
+              <div class="slide">
+              </div>
+              <div class="slide">
+              </div>
+              <div class="slide">
+              </div>
+              <div class="slide">
+              </div>
+            </div>
+          </div>
+        </div><!-- End // .slider -->
+       </div>
       <div id="textBlock">
       <h2>Galería de Imágenes</h2>
       <label class="subtitle">Sabemos que quieres mostrar tu trabajo y nosotros lo hacemos de la manera más elegante e intuitiva. </label>
       </div>
-  </div>
-
-
-
-
-
-
-
+      </div>
     </div>
 
 
@@ -136,7 +140,7 @@
   <!-- Esta sección se muestran los diferentes tipos de servicios
     que se pueden ofrecer. Desarrollo web, diseño web, desarrollo de software, etcétera. -->
     <div id="servicios">
-
+      <label>Servicios</label>
       
 
     </div>
@@ -145,7 +149,7 @@
 
   <!-- Esta sección muestra el equipo de desarrollo de la página. -->
     <div id="equipo">
-      <label>Equipo de Desarrollo y Gestión</label>
+      <label>Equipo de Desarrollo</label>
       <div class="row">
         <div class="column">
           <div class="card">

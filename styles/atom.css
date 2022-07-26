@@ -1,19 +1,19 @@
 .whatsapp {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #376d54;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4fab80;
     color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     z-index: 100;
 }
 
 .whatsapp-icon {
-    margin-top: 13px;
+    margin-top: 11px;
 }
 
 :root {

@@ -1,0 +1,16 @@
+#servicios {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#servicios label {
+    font-size: 5vh;
+    font-weight: bold;
+    padding-bottom: 5vh;
+}
