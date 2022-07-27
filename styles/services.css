@@ -41,6 +41,34 @@
 
 #allServices{
     padding-top: 15vh;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
+}
+.serviceDescriptionResponsive{
+    display: none;
+}
+@media (max-width: 621px) {
+    #allServices{
+        padding-top: 0vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: center;
+        justify-content: space-between;
+        margin: 20px;
+        margin-left: -2px;
+    }
+    .service{
+        display: flex;
+        padding: 30px;
+    }
+    .serviceDescription{
+        display: none;
+    }
+    .serviceDescriptionResponsive{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        padding-left: 120px;
+    }
 }

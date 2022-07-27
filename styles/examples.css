@@ -113,8 +113,6 @@ background: url("/public/4.jpg");
     align-items: center;
     text-align: center;
 }
-
-
 #ejemplos {
     margin: 0 auto;
     display: flex;

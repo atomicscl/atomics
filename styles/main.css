@@ -110,7 +110,7 @@ body {
 }
 #menu a{
     align-items: center;
-    color: #ffffff;
+    color: #b9b7b7;
     transition: 0.15s;
     font-weight: bold;
 }
@@ -135,6 +135,7 @@ body {
     }
     #menu{
         flex-direction: column;
+        
     }    
     #logo{
         left: 0;
@@ -161,6 +162,7 @@ body {
         margin-top: 30px;
         flex-direction: column;
         align-items: center;
+        font-size: small;
     }
     #izq{
         margin-bottom: 120px;

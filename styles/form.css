@@ -8,7 +8,7 @@
 }
 
 .form {
-    width: 70vw;
+    width: 50vw;
     height: 73vh;
     background: #e6e6e6;
     border-radius: 8px;
@@ -124,4 +124,12 @@ span {
 
 .form-control input:valid{
     border-bottom-color: rgb(76, 161, 47);
+}
+@media (max-width: 621px) {
+    .form {
+        margin: 0;
+        width: 80vw;
+
+    }
+    
 }
