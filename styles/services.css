@@ -41,34 +41,25 @@
 
 #allServices{
     padding-top: 15vh;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
 }
-.serviceDescriptionResponsive{
-    display: none;
-}
+
 @media (max-width: 621px) {
     #allServices{
-        padding-top: 0vh;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
+        margin-top: 55vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        justify-content: space-between;
-        margin: 20px;
-        margin-left: -2px;
     }
     .service{
-        display: flex;
-        padding: 30px;
+        width: 80%;
+        margin: 10%;
     }
-    .serviceDescription{
-        display: none;
-    }
-    .serviceDescriptionResponsive{
+
+    #servicios{
         display: flex;
-        justify-content: space-between;
-        margin-left: 10px;
-        padding-left: 120px;
+        padding-bottom: 75vh;
     }
 }

@@ -22,7 +22,7 @@
   <body>
     <!-- Loader del sitio. -->
     <div id="loader">
-      <main class="animate__animated animate__backInDown">
+      <main class="atomo animate__animated animate__backInDown">
         <div class="atom">
           <div class="electron"></div>
           <div class="electron-alpha"></div>
@@ -90,7 +90,6 @@
         <label class="serviceDescription">Utilizamos herramientas de desarrollo web profesionales. Prestamos la misma
           atención a nuestro desarrollo
           Front-End y Back-End, por lo tanto su sitio web o aplicación se verá bien y funcionará bien.</label>
-          <label class="serviceDescriptionResponsive">Calidad asegurada tanto en Backend, Frontend</label>
       </div>
   
       <div class="service">
@@ -99,7 +98,6 @@
         <label class="serviceDescription">Obtenga la solución adecuada para su negocio, una aplicación de escritorio
           nativa, portátil e independiente del
           dispostitivo por donde se mire. Obtenga una plataforma totalmente personalizada para su empresa.</label>
-          <label class="serviceDescriptionResponsive">Aplicación de escritorio nativa y portatil</label>
       </div>
   
       <div class="service">
@@ -109,7 +107,6 @@
           multiplataforma. Nos complace desarrollar
           aplicaciones móviles para su negocio y lo integraremos de forma que pueda observar el proceso de
           desarrollo.</label>
-          <label class="serviceDescriptionResponsive">Aplicación Multiplataforma Responsiva</label>
       </div>
     </div>
   </div>
@@ -117,7 +114,7 @@
 
 
     <!-- Esta sección muestran ejemplos qué podemos implementar. 
-        Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
+        Por ejemplo, consumir la api de maps, galería slider, gráficos con datos, forms, etc... -->
     <div id="ejemplos" class="animate__animated animate__fadeIn">
       <div data-aos="fade-up" class="ejemplo" loading="lazy">
         <div class="textBlock">
@@ -127,17 +124,27 @@
       <div id="map"></div>
       </div>
       <div data-aos="fade-up" class="ejemplo">
-        <div id="graphic">
-          <div id="chart-wrapper">
-            <canvas id="myChart"></canvas>
-          </div>
-        </div>
+     
       <div data-aos="fade-up" class="textBlock">
         <h2>Gráficos y Análisis de Datos</h2>
         <label class="subtitle">A través de la computación y matemática analizamos los datos de tu negocio junto a ti.</label>
       </div>
+        <div id="graphic">
+          <div id="chart-wrapper">
+      <canvas id="myChart" width="200" height="200"></canvas>
+          </div>
+    
+        </div>
+
+
+
+
       </div>
-      <div data-aos="fade-up" class="ejemplo">
+
+
+
+
+      <div data-aos="fade-up" class="ejemplo formExampl">
         <div class="textBlock">
         <h2>Formularios de Contacto Encriptados</h2>
         <label class="subtitle">La privacidad es fundamental. Gracias a un sistema de encriptación, la información no es alcanzable por terceros.</label>
@@ -151,6 +158,12 @@
       </form>
     </div>
     <div data-aos="fade-up" class="ejemplo">
+    
+          <div data-aos="fade-up" class="textBlock">
+            <h2>Galería de Imágenes</h2>
+            <label class="subtitle">Sabemos que quieres mostrar tu trabajo y nosotros lo hacemos de la manera más elegante e
+              intuitiva. </label>
+          </div>
        <div id="galeria">
         <div class="slider">
           <div class="slide_viewer">
@@ -167,26 +180,21 @@
           </div>
         </div><!-- End // .slider -->
        </div>
-      <div data-aos="fade-up" class="textBlock">
-      <h2>Galería de Imágenes</h2>
-      <label class="subtitle">Sabemos que quieres mostrar tu trabajo y nosotros lo hacemos de la manera más elegante e intuitiva. </label>
-      </div>
       </div>
     </div>
 
 
   <!-- Esta sección muestra el equipo de desarrollo de la página. -->
     <div data-aos="fade-up" id="equipo">
-      <label>Nosotros</label>
+      <label class="usTitle">Nosotros</label>
       <div class="row">
         <div class="column">
           <div class="card">
             <!--<img src="pic.jpg" alt="Bastián" style="width:100%">-->
             <div class="container">
               <h2>Bastián Escribano G.</h2>
-              <p class="titleTeam">CEO &amp; Founder</p>
+              <p class="titleTeam">Fundador, CEO &amp; Desarrollador de Software</p>
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la Universidad de Santiago de Chile.</p>
-              <p>bastian.escribano@usach.cl</p>
             </div>
           </div>
         </div>
@@ -196,10 +204,8 @@
             <!-- <img src="img2.jpg" alt="Nícolas" style="width:100%"> -->
             <div class="container">
               <h2>Nícolas Farfán Ch.</h2>
-              <p class="titleTeam">Designer & Developer</p>
-              <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
-              Universidad de Santiago de Chile.</p>
-              <p>nicolas.farfan@usach.cl</p>
+              <p class="titleTeam">Desarrollador de Software</p>
+              <p>...</p>
             </div>
           </div>
         </div>
@@ -209,10 +215,8 @@
             <!-- <img src="img3.jpg" alt="Jovanni" style="width:100%"> -->
             <div class="container">
               <h2>Jovanni Schneider</h2>
-              <p class="titleTeam">Designer & Developer</p>
-              <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
-              Universidad de Santiago de Chile.</p>
-              <p>jovanni.schneider@usach.cl</p>
+              <p class="titleTeam">Desarrollador</p>
+              <p>...</p>
             </div>
           </div>
         </div>
@@ -222,10 +226,8 @@
             <!-- <img src="img4.jpg" alt="Diego" style="width:100%"> -->
             <div class="container">
               <h2>Diego Riquelme</h2>
-              <p class="titleTeam">Designer & Developer</p>
-              <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
-                Universidad de Santiago de Chile.</p>
-              <p>diego.riquelme@usach.cl</p>
+              <p class="titleTeam">Desarrollador de Software</p>
+              <p>...</p>
             </div>
           </div>
         </div>
@@ -235,10 +237,8 @@
             <!-- <img src="img5.jpg" alt="José" style="width:100%"> -->
             <div class="container">
               <h2>José Toro</h2>
-              <p class="titleTeam">Designer & Developer</p>
-              <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
-              Universidad de Santiago de Chile.</p>
-              <p>jose.toro@usach.cl</p>
+              <p class="titleTeam">Desarrollador de Software</p>
+              <p>...</p>
             </div>
           </div>
         </div>

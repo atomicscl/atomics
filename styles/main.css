@@ -11,11 +11,19 @@
 
 
 .arrow {
-    left: 50%;
-    top: 90vh;
+            left: 49.8%;
+        top: 85vh;
     position: absolute;
-  
 }
+@media (max-width: 621px) {
+    .arrow{
+            left: 47.5%;
+            top: 80%;
+    }
+}
+
+
+
 
 .bounce {
     -moz-animation: bounce 2s infinite;
@@ -108,6 +116,13 @@ body {
     margin-top: 10px;
     position: relative;
 }
+
+@media (max-width: 621px) {
+    #menu {
+       display: none; 
+    }
+}
+
 #menu a{
     align-items: center;
     color: #b9b7b7;
@@ -154,7 +169,11 @@ body {
     width: 100vw;
     height: 90vh;
     display: flex;
-
+}
+@media (max-width: 621px) {
+    #homepage {
+        padding-top: 20vh;
+    }
 }
 
 @media (max-width: 621px) { 
@@ -201,12 +220,34 @@ body {
     font-size: 8vh;
     font-weight: bold;
     text-shadow: 1px 1px white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
 }
+
+@media (max-width: 621px) {
+    .question {
+        width: 90%;
+        margin-inline: 5%;
+        font-size: 5vh;
+    }
+}
+
 
 .title {
     font-size: 4vh;
+    width: 90%;
+    margin-inline: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 .subtitle {
     font-size: 2.2vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
