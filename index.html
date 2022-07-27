@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/atom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/boutUs.css" />
@@ -80,7 +81,7 @@
   <!-- Esta sección se muestran los diferentes tipos de servicios
       que se pueden ofrecer. Desarrollo web, diseño web, desarrollo de software, etcétera. -->
   
-  <div id="servicios">
+  <div data-aos="fade-up" id="servicios">
     <div id="allServices">
       <div class="service">
         <i class="fa-brands fa-chrome"></i>
@@ -114,30 +115,30 @@
     <!-- Esta sección muestran ejemplos qué podemos implementar. 
         Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
     <div id="ejemplos" class="animate__animated animate__fadeIn">
-      <div class="ejemplo" loading="lazy">
+      <div data-aos="fade-up" class="ejemplo" loading="lazy">
         <div class="textBlock">
           <h2>Ubicación en el Mapa</h2>
           <label class="subtitle">Incluye la ubicación de tu negocio, tus nuevos clientes te lo agradecerán.</label>
         </div>
       <div id="map"></div>
       </div>
-      <div class="ejemplo">
+      <div data-aos="fade-up" class="ejemplo">
         <div id="graphic">
           <div id="chart-wrapper">
             <canvas id="myChart"></canvas>
           </div>
         </div>
-      <div class="textBlock">
+      <div data-aos="fade-up" class="textBlock">
         <h2>Gráficos y Análisis de Datos</h2>
         <label class="subtitle">A través de la computación y matemática analizamos los datos de tu negocio junto a ti.</label>
       </div>
       </div>
-      <div class="ejemplo">
+      <div data-aos="fade-up" class="ejemplo">
         <div class="textBlock">
         <h2>Formularios de Contacto Encriptados</h2>
         <label class="subtitle">La privacidad es fundamental. Gracias a un sistema de encriptación, la información no es alcanzable por terceros.</label>
       </div>
-      <form class="form-inline" action="/action_page.php">
+      <form data-aos="fade-up" class="form-inline" action="/action_page.php">
         <label for="email">Correo:</label>
         <input type="email" id="email" placeholder="Ingresa tu correo" name="email">
         <label for="pwd">Mensaje:</label>
@@ -145,7 +146,7 @@
         <button>Enviar</button>
       </form>
     </div>
-    <div class="ejemplo">
+    <div data-aos="fade-up" class="ejemplo">
        <div id="galeria">
         <div class="slider">
           <div class="slide_viewer">
@@ -162,7 +163,7 @@
           </div>
         </div><!-- End // .slider -->
        </div>
-      <div class="textBlock">
+      <div data-aos="fade-up" class="textBlock">
       <h2>Galería de Imágenes</h2>
       <label class="subtitle">Sabemos que quieres mostrar tu trabajo y nosotros lo hacemos de la manera más elegante e intuitiva. </label>
       </div>
@@ -171,7 +172,7 @@
 
 
   <!-- Esta sección muestra el equipo de desarrollo de la página. -->
-    <div id="equipo">
+    <div data-aos="fade-up" id="equipo">
       <label>Nosotros</label>
       <div class="row">
         <div class="column">
@@ -241,7 +242,7 @@
     </div>
 
   <!-- Esta sección muestra el formulario de contacto de la página. -->
-    <div id="talk">
+    <div data-aos="fade-up" id="talk">
       <form class="form" target="_blank" action="https://formsubmit.co/bastian.escribano@usach.cl" method="POST">
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_captcha" value="false">
@@ -273,6 +274,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js"></script>
   <script src="scripts/particles.js"></script>
   <script src="scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000
+      });
+    </script>
 
   </body>
 </html>
