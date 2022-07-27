@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/atom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/boutUs.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
     <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
   </head>
@@ -141,8 +141,10 @@
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
               Universidad de Santiago de Chile.</p>
               <p>jose.toro@usach.cl</p>
+            </div>
           </div>
         </div>
+      </div>
     </div>
 
   <!-- Esta sección muestra el formulario de contacto de la página. -->
@@ -152,8 +154,14 @@
         <input type="hidden" name="_captcha" value="false">
         <h2 style="color: black;">¡Contáctanos!</h2>
         <input type="hidden" name="_subject" value="Atomics">
-        <p type="Nombre"><input name="Nombre" placeholder="Escríbenos tu nombre aquí"></input></p>
-        <p type="Email"><input type="email" name="Correo" placeholder="Déjanos tu contacto de correo"></input></p>
+        <div class="form-control">
+          <input type="text" name="Nombre" required onchange="this.className=(this.value==='')?'':'visited';">
+          <label>Nombre</label>
+        </div>
+        <div class = "form-control">
+          <input type="email" name="Correo" required onchange="this.className=(this.value==='')?'':'visited';">
+          <label>Email</label>
+        </div>
         <p type="Mensaje"><textarea name="Mensaje" placeholder="¿Qué podemos hacer por ti?"></textarea></p>
         <button type="submit">Enviar</button>
       </form>
@@ -164,5 +172,6 @@
     <i class="fa fa-whatsapp whatsapp-icon"></i></a>
   <script src="scripts/particles.js"></script>
   <script src="scripts/index.js"></script>
+
   </body>
 </html>

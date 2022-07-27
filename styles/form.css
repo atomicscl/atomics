@@ -9,7 +9,7 @@
 
 .form {
     width: 70vw;
-    height: 70vh;
+    height: 73vh;
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
@@ -47,6 +47,7 @@ input {
     border-bottom: 2px solid #bebed2
 }
 
+
 input:focus {
     border-bottom: 2px solid #78788c
 }
@@ -78,4 +79,49 @@ button:hover {
 
 span {
     margin: 0 5px 0 15px
+}
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+}
+.form-control input {
+    background-color: transparent ;
+    display: block ;
+    width: 100%;
+    margin-top: 30px;;
+    font-size: 13px;
+    color: black;
+}
+
+
+.form-control label{
+    color: #07080a ;
+    font-size: 13px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    /*pointer-events: none;*/
+}
+
+.form-control label {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 5px;
+    transition-duration: 400ms;
+}
+
+.form-control input:focus + label,
+.form-control input:valid + label,
+.form-control label:hover,
+.form-control input:hover + label
+{
+    color: black;
+    font-size: 15px;
+    transform: translateY(-20px);
+    transition-delay: 80ms;
+    transition-duration: 500ms;
+}
+
+.form-control input:valid{
+    border-bottom-color: rgb(76, 161, 47);
 }
