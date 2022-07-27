@@ -96,7 +96,7 @@ background: url("/public/4.jpg");
     }
 }
 
-#textBlock{
+.textBlock{
     display: block;
     width: 40%;
 }

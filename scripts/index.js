@@ -139,5 +139,4 @@ $('.slider').each(function() {
   advance();
 });
 
-
 }

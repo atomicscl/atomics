@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/examples.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/services.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
               integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -83,7 +82,7 @@
         Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
     <div id="ejemplos" class="animate__animated animate__fadeIn">
       <div class="ejemplo" loading="lazy">
-        <div id="textBlock">
+        <div class="textBlock">
           <h2>Ubicación en el Mapa</h2>
           <label class="subtitle">Incluye la ubicación de tu negocio, tus nuevos clientes te lo agradecerán.</label>
         </div>
@@ -95,13 +94,13 @@
             <canvas id="myChart"></canvas>
           </div>
         </div>
-      <div id="textBlock">
+      <div class="textBlock">
         <h2>Gráficos y Análisis de Datos</h2>
         <label class="subtitle">A través de la computación y matemática analizamos los datos de tu negocio junto a ti.</label>
       </div>
       </div>
       <div class="ejemplo">
-        <div id="textBlock">
+        <div class="textBlock">
         <h2>Formularios de Contacto Encriptados</h2>
         <label class="subtitle">La privacidad es fundamental. Gracias a un sistema de encriptación, la información no es alcanzable por terceros.</label>
       </div>
@@ -130,7 +129,7 @@
           </div>
         </div><!-- End // .slider -->
        </div>
-      <div id="textBlock">
+      <div class="textBlock">
       <h2>Galería de Imágenes</h2>
       <label class="subtitle">Sabemos que quieres mostrar tu trabajo y nosotros lo hacemos de la manera más elegante e intuitiva. </label>
       </div>
@@ -231,8 +230,10 @@
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
               Universidad de Santiago de Chile.</p>
               <p>jose.toro@usach.cl</p>
+            </div>
           </div>
         </div>
+      </div>
     </div>
 
   <!-- Esta sección muestra el formulario de contacto de la página. -->
@@ -242,8 +243,14 @@
         <input type="hidden" name="_captcha" value="false">
         <h2 style="color: black;">¡Contáctanos!</h2>
         <input type="hidden" name="_subject" value="Atomics">
-        <p type="Nombre"><input name="Nombre" placeholder="Escríbenos tu nombre aquí"></input></p>
-        <p type="Email"><input type="email" name="Correo" placeholder="Déjanos tu contacto de correo"></input></p>
+        <div class="form-control">
+          <input type="text" name="Nombre" required onchange="this.className=(this.value==='')?'':'visited';">
+          <label>Nombre</label>
+        </div>
+        <div class = "form-control">
+          <input type="email" name="Correo" required onchange="this.className=(this.value==='')?'':'visited';">
+          <label>Email</label>
+        </div>
         <p type="Mensaje"><textarea name="Mensaje" placeholder="¿Qué podemos hacer por ti?"></textarea></p>
         <button type="submit">Enviar</button>
       </form>
@@ -262,5 +269,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js"></script>
   <script src="scripts/particles.js"></script>
   <script src="scripts/index.js"></script>
+
   </body>
 </html>
