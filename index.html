@@ -16,8 +16,6 @@
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
               integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
               crossorigin="" />
-
-    
   </head>
   <body>
     <!-- Loader del sitio. -->
@@ -77,16 +75,13 @@
          <div class="arrow bounce">
         <a class="fa fa-arrow-down fa-2x" href="#ejemplos"></a>
       </div>
-
-
     </div>
 
 
     <!-- Esta sección muestran ejemplos qué podemos implementar. 
         Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
     <div id="ejemplos">
-
-      <div class="ejemplo">
+      <div class="ejemplo" loading="lazy">
         <div id="textBlock">
           <h2>Ubicación en el Mapa</h2>
           <label class="subtitle">Incluye la ubicación de tu negocio, tus nuevos clientes te lo agradecerán.</label>
@@ -146,8 +141,24 @@
   <!-- Esta sección se muestran los diferentes tipos de servicios
     que se pueden ofrecer. Desarrollo web, diseño web, desarrollo de software, etcétera. -->
     <div id="servicios">
-      <label>Servicios</label>
-      
+      <div class="service">
+        <label class="serviceTitle">Desarrollo Web</label>
+        <label class="serviceDescription">Utilizamos herramientas de desarrollo web profesionales. Prestamos la misma atención a nuestro desarrollo
+        Front-End y Back-End, por lo tanto su sitio web o aplicación se verá bien y funcionará bien.</label>
+      </div>
+
+      <div class="service">
+        <label class="serviceTitle">Aplicaciones de Escritorio</label>
+        <label class="serviceDescription">Obtenga la solución adecuada para su negocio, una aplicación de escritorio nativa, portátil e independiente del
+        dispostitivo por donde se mire. Obtenga una plataforma totalmente personalizada para su empresa.</label>
+      </div>
+
+      <div class="service">
+        <label class="serviceTitle" >Aplicaciones Móvil</label>
+        <label class="serviceDescription">Brindamos desarrollo profesional de aplicaciones en iOS, Android y multiplataforma. Nos complace desarrollar
+        aplicaciones móviles para su negocio y lo integraremos de forma que pueda observar el proceso de desarrollo.</label>
+      </div>
+
 
     </div>
 
@@ -240,7 +251,7 @@
   <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
     <!-- Scripts. -->
-  <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>

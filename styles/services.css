@@ -6,11 +6,24 @@
     text-align: center;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 40vh;
 }
 
-#servicios label {
-    font-size: 5vh;
-    font-weight: bold;
-    padding-bottom: 5vh;
+.service{
+    width: 20%;
+}
+.serviceDescription{
+    display: block;
+    font-size: 2vh;
+    color: rgb(174, 180, 186);
+}
+
+.serviceTitle{
+    font-size: 2.7vh;
+    color: white;
+}
+
+.service i{
+    color: white;
 }
