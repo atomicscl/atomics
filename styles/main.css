@@ -10,6 +10,7 @@
 
 
 .arrowUp{
+        z-index: 1000;
     position: fixed;
     left: 5vh;
     top: 90vh;
@@ -21,6 +22,7 @@
 
 
 .arrow {
+    z-index: 1000;
     left: 49.8%;
     top: 85vh;
     position: absolute;
