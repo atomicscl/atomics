@@ -1,0 +1,29 @@
+#servicios {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding-top: 40vh;
+}
+
+.service{
+    width: 20%;
+}
+.serviceDescription{
+    display: block;
+    font-size: 2vh;
+    color: rgb(174, 180, 186);
+}
+
+.serviceTitle{
+    font-size: 2.7vh;
+    color: white;
+}
+
+.service i{
+    color: white;
+}

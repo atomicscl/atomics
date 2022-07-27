@@ -8,10 +8,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/atom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/boutUs.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/examples.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/services.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
-    <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+              integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+              crossorigin="" />
   </head>
   <body>
     <!-- Loader del sitio. -->
@@ -34,7 +39,7 @@
       <div id = "logo">
         <i class="fa-solid fa-atom">Atomics</i></div>
       <div>
-        <label><a href="#servicios">Servicios</a></label>
+        <label><a href="#ejemplos">Servicios</a></label>
         <label class = "pipe">｜</label>
       </div>
       <div>
@@ -57,36 +62,119 @@
           </div>
         </main>
       </div>
+
       <div id="der">
         <div style="display: block;">
-        <label style="font-weight: bold;   text-shadow: 1px 1px white;">¿Tienes una idea?</label>
-        <label style="font-size: 4vh;">¡Nosotros lo programamos!</label>
-        <label style="font-size: 2.2vh;">Servicios de Desarrollo de Software y Soluciones a Medidas de Alta Calidad.</label>
+          <div id="dere">
+        <label class="question">¿Tienes una idea?</label>
+        <label class="title">¡Nosotros lo programamos!</label>
+        <label class="subtitle">Servicios de Desarrollo de Software y Soluciones a Medidas de Alta Calidad.</label>
+          </div>
         </div>
+      </div>
+
+         <div class="arrow bounce">
+        <a class="fa fa-arrow-down fa-2x" href="#ejemplos"></a>
       </div>
     </div>
 
 
+    <!-- Esta sección muestran ejemplos qué podemos implementar. 
+        Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
+    <div id="ejemplos">
+      <div class="ejemplo" loading="lazy">
+        <div class="textBlock">
+          <h2>Ubicación en el Mapa</h2>
+          <label class="subtitle">Incluye la ubicación de tu negocio, tus nuevos clientes te lo agradecerán.</label>
+        </div>
+      <div id="map"></div>
+      </div>
+      <div class="ejemplo">
+        <div id="graphic">
+          <div id="chart-wrapper">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      <div class="textBlock">
+        <h2>Gráficos y Análisis de Datos</h2>
+        <label class="subtitle">A través de la computación y matemática analizamos los datos de tu negocio junto a ti.</label>
+      </div>
+      </div>
+      <div class="ejemplo">
+        <div class="textBlock">
+        <h2>Formularios de Contacto Encriptados</h2>
+        <label class="subtitle">La privacidad es fundamental. Gracias a un sistema de encriptación, la información no es alcanzable por terceros.</label>
+      </div>
+      <form class="form-inline" action="/action_page.php">
+        <label for="email">Correo:</label>
+        <input type="email" id="email" placeholder="Ingresa tu correo" name="email">
+        <label for="pwd">Mensaje:</label>
+        <input id="pwd" placeholder="Ingresa un mensaje" name="pswd">
+        <button>Enviar</button>
+      </form>
+    </div>
+    <div class="ejemplo">
+       <div id="galeria">
+        <div class="slider">
+          <div class="slide_viewer">
+            <div class="slide_group">
+              <div class="slide">
+              </div>
+              <div class="slide">
+              </div>
+              <div class="slide">
+              </div>
+              <div class="slide">
+              </div>
+            </div>
+          </div>
+        </div><!-- End // .slider -->
+       </div>
+      <div class="textBlock">
+      <h2>Galería de Imágenes</h2>
+      <label class="subtitle">Sabemos que quieres mostrar tu trabajo y nosotros lo hacemos de la manera más elegante e intuitiva. </label>
+      </div>
+      </div>
+    </div>
+
+
+
   <!-- Esta sección se muestran los diferentes tipos de servicios
     que se pueden ofrecer. Desarrollo web, diseño web, desarrollo de software, etcétera. -->
-    <div id="servicios"></div>
+    <div id="servicios">
+      <div class="service">
+        <label class="serviceTitle">Desarrollo Web</label>
+        <label class="serviceDescription">Utilizamos herramientas de desarrollo web profesionales. Prestamos la misma atención a nuestro desarrollo
+        Front-End y Back-End, por lo tanto su sitio web o aplicación se verá bien y funcionará bien.</label>
+      </div>
 
-    <!-- Esta sección muestran ejemplos qué podemos implementar. 
-    Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
-    <div id="ejemplos"></div>
+      <div class="service">
+        <label class="serviceTitle">Aplicaciones de Escritorio</label>
+        <label class="serviceDescription">Obtenga la solución adecuada para su negocio, una aplicación de escritorio nativa, portátil e independiente del
+        dispostitivo por donde se mire. Obtenga una plataforma totalmente personalizada para su empresa.</label>
+      </div>
+
+      <div class="service">
+        <label class="serviceTitle" >Aplicaciones Móvil</label>
+        <label class="serviceDescription">Brindamos desarrollo profesional de aplicaciones en iOS, Android y multiplataforma. Nos complace desarrollar
+        aplicaciones móviles para su negocio y lo integraremos de forma que pueda observar el proceso de desarrollo.</label>
+      </div>
+
+
+    </div>
 
 
 
   <!-- Esta sección muestra el equipo de desarrollo de la página. -->
     <div id="equipo">
-      <label>Equipo de Desarrollo y Gestión</label>
+      <label>Equipo de Desarrollo</label>
       <div class="row">
         <div class="column">
           <div class="card">
             <img src="img1.jpg" alt="Bastián" style="width:100%">
             <div class="container">
               <h2>Bastián Escribano G.</h2>
-              <p class="title">CEO &amp; Founder</p>
+              <p class="titleTeam">CEO &amp; Founder</p>
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la Universidad de Santiago de Chile.</p>
               <p>bastian.escribano@usach.cl</p>
             </div>
@@ -98,7 +186,7 @@
             <img src="img2.jpg" alt="Nícolas" style="width:100%">
             <div class="container">
               <h2>Nícolas Farfán Ch.</h2>
-              <p class="title">Designer & Developer</p>
+              <p class="titleTeam">Designer & Developer</p>
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
               Universidad de Santiago de Chile.</p>
               <p>nicolas.farfan@usach.cl</p>
@@ -111,7 +199,7 @@
             <img src="img3.jpg" alt="Jovanni" style="width:100%">
             <div class="container">
               <h2>Jovanni Schneider</h2>
-              <p class="title">Designer & Developer</p>
+              <p class="titleTeam">Designer & Developer</p>
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
               Universidad de Santiago de Chile.</p>
               <p>jovanni.schneider@usach.cl</p>
@@ -124,7 +212,7 @@
             <img src="img4.jpg" alt="Diego" style="width:100%">
             <div class="container">
               <h2>Diego Riquelme</h2>
-              <p class="title">Designer & Developer</p>
+              <p class="titleTeam">Designer & Developer</p>
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
                 Universidad de Santiago de Chile.</p>
               <p>diego.riquelme@usach.cl</p>
@@ -137,7 +225,7 @@
             <img src="img5.jpg" alt="José" style="width:100%">
             <div class="container">
               <h2>José Toro</h2>
-              <p class="title">Designer & Developer</p>
+              <p class="titleTeam">Designer & Developer</p>
               <p>Desarrollador de Software & Estudiante de Ingeniería de Ejecución en Computación e Informática en la
               Universidad de Santiago de Chile.</p>
               <p>jose.toro@usach.cl</p>
@@ -168,8 +256,16 @@
     </div>
 
   <!-- Ícono de WhatsApp del sitio. -->
-    <a href="https://wa.me/56946241025" class="whatsapp" target="_blank">
-    <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  <a href="https://wa.me/56946241025" class="whatsapp" target="_blank">
+  <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <!-- Scripts. -->
+ <script src="https://kit.fontawesome.com/7e22763459.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js"></script>
   <script src="scripts/particles.js"></script>
   <script src="scripts/index.js"></script>
 

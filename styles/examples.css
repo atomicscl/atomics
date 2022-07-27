@@ -1,0 +1,153 @@
+
+.slider {
+    margin: 0 auto;
+    width: 100%;
+ 
+}
+
+.slide_viewer {
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    border-radius: 10px;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide:nth-of-type(2) {
+    background: url("/public/2.jpg");
+    
+}
+
+.slide:nth-of-type(1) {
+background: url("/public/1.jpg");
+
+}
+
+
+.slide:nth-of-type(3) {
+background: url("/public/3.jpg");
+
+}
+
+.slide:nth-of-type(4) {
+background: url("/public/4.jpg");
+}
+
+
+
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.textBlock{
+    display: block;
+    width: 40%;
+}
+
+
+.ejemplo {
+    border-radius: 16px;
+    -webkit-backdrop-filter: blur(2.4px);
+    width: 90vw;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+#ejemplos {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: -40vh;
+}
+
+#map {
+    height: 60%;
+    width: 40%;
+    border-radius: 1vh;
+    -webkit-backdrop-filter: blur(2.4px);
+}
+
+
+#graphic{
+    height: 70%;
+    width: 50%;
+    border-radius: 2vh;
+}
+
+#galeria{
+    height: 70%;
+    width: 40%;
+
+}
+
+  #chart-wrapper {
+      display: inline-block;
+      position: relative;
+      width: 80%;
+  }
+
