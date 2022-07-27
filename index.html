@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/examples.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/services.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
               integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -80,7 +81,7 @@
 
     <!-- Esta sección muestran ejemplos qué podemos implementar. 
         Por ejemplo, consumir la api de google maps, galería slider, gráficos con datos, forms, etc... -->
-    <div id="ejemplos">
+    <div id="ejemplos" class="animate__animated animate__fadeIn">
       <div class="ejemplo" loading="lazy">
         <div id="textBlock">
           <h2>Ubicación en el Mapa</h2>
@@ -136,31 +137,33 @@
       </div>
     </div>
 
-
-
   <!-- Esta sección se muestran los diferentes tipos de servicios
     que se pueden ofrecer. Desarrollo web, diseño web, desarrollo de software, etcétera. -->
+
     <div id="servicios">
+      <label class="serviceTitleTitle">Servicios</label>
+      <div id="allServices">
       <div class="service">
+        <i class="fa-brands fa-chrome"></i>
         <label class="serviceTitle">Desarrollo Web</label>
         <label class="serviceDescription">Utilizamos herramientas de desarrollo web profesionales. Prestamos la misma atención a nuestro desarrollo
         Front-End y Back-End, por lo tanto su sitio web o aplicación se verá bien y funcionará bien.</label>
       </div>
 
       <div class="service">
+        <i class="fa-solid fa-desktop"></i>
         <label class="serviceTitle">Aplicaciones de Escritorio</label>
         <label class="serviceDescription">Obtenga la solución adecuada para su negocio, una aplicación de escritorio nativa, portátil e independiente del
         dispostitivo por donde se mire. Obtenga una plataforma totalmente personalizada para su empresa.</label>
       </div>
 
       <div class="service">
+        <i class="fa-solid fa-mobile-button"></i>
         <label class="serviceTitle" >Aplicaciones Móvil</label>
         <label class="serviceDescription">Brindamos desarrollo profesional de aplicaciones en iOS, Android y multiplataforma. Nos complace desarrollar
         aplicaciones móviles para su negocio y lo integraremos de forma que pueda observar el proceso de desarrollo.</label>
       </div>
-
-
-    </div>
+    </div></div>
 
 
 
