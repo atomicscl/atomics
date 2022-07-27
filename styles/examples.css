@@ -51,7 +51,6 @@ background: url("/public/4.jpg");
 
 
 
-
 .form-inline {
     display: flex;
     flex-flow: row wrap;
@@ -153,7 +152,9 @@ margin: 0 auto;
         }
         
         #galeria{
+            display: block;
             margin: 0 auto;
+            width: 100%;
             margin-top: 5vh;
         }
 
