@@ -6,7 +6,7 @@
 }
 
 .slide_viewer {
-    height: 40vh;
+    height: 25vh;
     overflow: hidden;
     position: relative;
 }
@@ -106,7 +106,7 @@ background: url("/public/4.jpg");
     border-radius: 16px;
     -webkit-backdrop-filter: blur(2.4px);
     width: 90vw;
-    height: 60vh;
+    height: 45vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -122,7 +122,8 @@ background: url("/public/4.jpg");
     align-items: center;
     text-align: center;
     width: 100vw;
-    margin-bottom: -40vh;
+    z-index: 1000;
+
 }
 
 #map {
