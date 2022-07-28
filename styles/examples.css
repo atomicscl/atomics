@@ -99,15 +99,15 @@ background: url("/public/4.jpg");
     display: block;
     width: 40%;
     align-items: center;
-        align-content: center;
-        align-self: center;
-        text-align: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
 }
 
 
 .ejemplo {
     border-radius: 16px;
-    -webkit-backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2px);
     width: 90vw;
     height: 50vh;
     margin: 0 auto;
@@ -129,7 +129,6 @@ background: url("/public/4.jpg");
     .ejemplo {
         width: 100vw;
         margin: 0 auto;
-
         display: block;
         margin: 2vh;
         -webkit-backdrop-filter: blur(0px);
