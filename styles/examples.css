@@ -1,56 +1,3 @@
-
-.slider {
-    margin: 0 auto;
-    width: 100%;
- 
-}
-
-.slide_viewer {
-    height: 25vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.slide_group {
-    height: 100%;
-    position: relative;
-    width: 100%;
-}
-
-.slide {
-    border-radius: 10px;
-    display: none;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.slide:first-child {
-    display: block;
-}
-
-.slide:nth-of-type(2) {
-    background: url("/public/2.jpg");
-    
-}
-
-.slide:nth-of-type(1) {
-background: url("/public/1.jpg");
-
-}
-
-
-.slide:nth-of-type(3) {
-background: url("/public/3.jpg");
-
-}
-
-.slide:nth-of-type(4) {
-background: url("/public/4.jpg");
-}
-
-
-
 .form-inline {
     display: flex;
     flex-flow: row wrap;
@@ -67,20 +14,22 @@ background: url("/public/4.jpg");
     vertical-align: middle;
     margin: 5px 10px 5px 0;
     padding: 10px;
-    background-color: #fff;
     border: 1px solid #ddd;
+    color: white;
 }
 
 /* Style the submit button */
 .form-inline button {
     padding: 10px 20px;
-    background-color: dodgerblue;
+    background-color: rgb(255, 255, 255);
     border: 1px solid #ddd;
-    color: white;
+    color: black;
 }
 
 .form-inline button:hover {
-    background-color: royalblue;
+    background-color: rgb(49, 10, 69);
+    color: white;
+    
 }
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
@@ -97,13 +46,16 @@ background: url("/public/4.jpg");
 
 .textBlock{
     display: block;
-    width: 40%;
+    width: 30vw;
     align-items: center;
     align-content: center;
     align-self: center;
     text-align: center;
 }
 
+.textBlockMapa{
+    padding: 3vh;
+}
 
 .ejemplo {
     border-radius: 16px;
@@ -119,6 +71,35 @@ background: url("/public/4.jpg");
     text-align: center;
 }
 
+
+.ejemploMapa{
+    width: 100vw;
+    padding-bottom: 10vh;
+}
+
+#ejemplos {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+#map {
+    width: 100vw;
+    height: 30vh;
+}
+
+
+#graphic {
+    width: 50%;
+}
+
+#chart-wrapper {
+    margin-inline: 5%;
+}
 
 @media (max-width: 800px) {
     #ejemplos {
@@ -139,72 +120,21 @@ background: url("/public/4.jpg");
         margin-inline: 5%;
     }
 
-    #map{
+
+    #graphic {
         margin: 0 auto;
         margin-top: 5vh;
         width: 100vw;
     }
-
-        #graphic {
-margin: 0 auto;
-    margin-top: 5vh;
-    width: 100vw;
-        }
-        form{
-            margin: 0 auto;
-            margin-top: 5vh;
-            width: 80%;
-            margin-inline: 10%;           
-        }
-        
-        #galeria{
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            margin-top: 5vh;
-        }
-
-        .formExampl{
-            display: block;
-            margin-bottom: 15vh;
-        }
-
+    form{
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 80%;
+        margin-inline: 10%;           
+    }
+    .formExampl{
+        color: white;
+        display: block;
+        margin-bottom: 15vh;
+    }
 }
-
-
-
-#ejemplos {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    z-index: 10;
-}
-
-#map {
-    width: 40%;
-    height: 50%;
-    border-radius: 1vh;
-    -webkit-backdrop-filter: blur(2.4px);
-}
-
-
-#graphic{
-    border-radius: 2vh;
-    width: 50%;
-}
-
-#galeria{
-    height: 70%;
-    width: 40%;
-}
-
-#chart-wrapper {
-   
-    position: relative;
-}
-
-
-
