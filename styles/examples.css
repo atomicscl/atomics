@@ -120,7 +120,6 @@
         margin-inline: 5%;
     }
 
-
     #graphic {
         margin: 0 auto;
         margin-top: 5vh;
@@ -137,4 +136,8 @@
         display: block;
         margin-bottom: 15vh;
     }
+    .ejemploMapa{
+        margin-top: -8vh;
+    }
 }
+
