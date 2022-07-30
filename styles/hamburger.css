@@ -10,8 +10,8 @@
   z-index: 2000;
   width: 100%;
   height: 100%;
-  background-color: #482dc4;
-  font-size: x-large;
+  background-color: #271c5c;
+  font-size: 6vh
 }
 .navigation li{
   padding:1em;
@@ -35,15 +35,15 @@
   width:40px;
   z-index: 3000;
   position: fixed;
-  right: 0;
-  bottom: 0;
+  left: 80%;
+
 }
 
 .navicon div, .navicon:before, .navicon:after {
   background-color: #fff;
   border-radius: 3px;
   display:block;
-  height: 3px;
+  height: 7px;
   content:'';
   margin:6px 0;
   transition: all 0.2s ease-out;
