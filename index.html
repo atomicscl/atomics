@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/boutUs.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/form.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/examples.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/hamburger.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/services.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/sweetalert2.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -51,7 +52,16 @@
         <label><a href="#talk">Contáctanos</a></label>
       </div>
     </div>
+    <div class="navicon open">
+      <div></div>
+  </div>
 
+  <ul class="navigation open">
+    <li class="hamb_nav"><a href="#homepage">Home</a></li>
+      <li class="hamb_nav"><a href="#servicios">Servicios</a></li>
+      <li class="hamb_nav"><a href="#equipo">Nosotros</a></li>
+      <li class="hamb_nav"><a href="#talk">Contáctanos</a></li>
+  </ul>
   <!-- Página principal. Se divide en dos secciones (izquierda y derecha, respectivamente). -->
     <div id="homepage">
       <div id="izq">
@@ -73,7 +83,6 @@
           </div>
         </div>
       </div>
-
          <div class="arrow bounce">
         <a class="fa fa-arrow-down fa-2x" href="#servicios"></a>
       </div>
@@ -277,6 +286,6 @@
         duration:1000
       });
     </script>
-
+  <script src="./scripts/hamburger.js"></script>
   </body>
 </html>
