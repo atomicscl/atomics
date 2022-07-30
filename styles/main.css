@@ -45,9 +45,9 @@
 
 
 .bounce {
-    -moz-animation: bounce 10s infinite;
-    -webkit-animation: bounce 10s infinite;
-    animation: bounce 10s infinite;
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
 }
 
 
@@ -63,7 +63,7 @@
     }
 
     40% {
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     }
 
     60% {
@@ -194,8 +194,9 @@ body {
 
 @media (max-width: 621px) { 
     #homepage {
-        padding-top: 20vh;
         margin-top: 30px;
+        padding: 5vh;
+        padding-top: 12vh;
         flex-direction: column;
         align-items: center;
         font-size: small;
