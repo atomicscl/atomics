@@ -9,28 +9,32 @@
 }
 
 
+
 .arrowUp{
-        z-index: 1000;
+    z-index: 1000;
     position: fixed;
     left: 5vh;
     top: 90vh;
 }
 
 .flechita{
-        transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 
 .arrow {
     z-index: 1000;
-    left: 49.8%;
-    top: 85vh;
+    left: 49.4vw;
+    top: 90vh;
     position: absolute;
 }
 @media (max-width: 621px) {
+    #servicios{
+        padding-top: 10vh;
+    }
     .arrow{
         left: 47.5%;
-        top: 90%;
+        top: 85vh;
     }
 
     .arrowUp{
@@ -41,9 +45,9 @@
 
 
 .bounce {
-    -moz-animation: bounce 10s infinite;
-    -webkit-animation: bounce 10s infinite;
-    animation: bounce 10s infinite;
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
 }
 
 
@@ -59,7 +63,7 @@
     }
 
     40% {
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     }
 
     60% {
@@ -95,7 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 80%;
 }
 
 #equipo label{
@@ -142,7 +146,7 @@ body {
 
 #menu a{
     align-items: center;
-    color: #b9b7b7;
+    color: #dfdfdf;
     transition: 0.15s;
     font-weight: bold;
 }
@@ -187,21 +191,18 @@ body {
     height: 90vh;
     display: flex;
 }
-@media (max-width: 621px) {
-    #homepage {
-        padding-top: 20vh;
-    }
-}
 
 @media (max-width: 621px) { 
     #homepage {
         margin-top: 30px;
+        padding: 5vh;
+        padding-top: 12vh;
         flex-direction: column;
         align-items: center;
         font-size: small;
     }
     #izq{
-        margin-bottom: 120px;
+        margin-bottom: 23vh;
     }
     #dere{
         font-size: small;
